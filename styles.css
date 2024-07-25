@@ -1,0 +1,91 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ff6f61, #de5d83);
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    flex-wrap: wrap;
+}
+
+#game-list {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 1em;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#game-details {
+    flex: 1;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-left: 1em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.game-item {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.game-item:hover {
+    background-color: #f9f9f9;
+}
+
+.game-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.game-description {
+    margin-top: 0.5em;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #game-list, #game-details {
+        width: 90%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #game-list {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
